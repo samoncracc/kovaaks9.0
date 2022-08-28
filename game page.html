@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="timerScreen">
+        <h1 id="homeTimer"></h1>
+    </div>
+    <div id="container">
+        <button class="button-30" role="button" onclick="goBack()">end game</button>
+        <h2 id="score">Score: 0</h2>
+        <h2 id="misses">Misses: 0</h2>
+        <h2 id="timer">Time left: 00</h2>
+    </div>
+    <div id="gameover">
+        <h2 id="statTitle">stats:</h2>
+        <h3 class="stats" id="hitStats">hits</h3>
+        <h3 class="stats" id="missStats">misses</h3>
+        <h3 class="stats" id="accuracyStats">accuracy: </h3>
+        <h3 class="stats" id="durationStats">set duration: </h3>
+        <h3 class="stats" id="difficultyStats">difficulty level: </h3>
+        <button class="button-30" role="button" onclick="playGame()">restart</button>
+    </div>
+    <div id="gamesettingswrapper">
+        <div id="gamesettings">
+            <h2 id="settings">Select difficulty level</h2>
+            <ul id="settingsButtons">
+                <button class="button-30" role="button" onclick="setHard()">hard</button>
+                <button class="button-30" role="button" onclick="setNormal()">normal</button>
+                <button class="button-30" role="button" onclick="setNoob()">noob</button>
+            </ul>
+            <div id="tempTarget"></div>
+        </div>
+        <div id="timeWrapper">
+            <h2 id="settings">Set duration</h2>
+            <ul id="timeSettingsButtons">
+                <button class="button-30" role="button" onclick="set15()">15</button>
+                <button class="button-30" role="button" onclick="set30()">30</button>
+                <button class="button-30" role="button" onclick="set45()">45</button>
+            </ul>
+            <button class="button-30" role="button" onclick="startGame()">start</button>
+        </div>
+    </div>
+    <div id="wrapper" onclick="missFunc()">
+        <div id="target" onclick="hitTarget()"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

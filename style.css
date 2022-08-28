@@ -1,0 +1,320 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+
+body {
+    margin: 0%;
+    overflow: hidden;
+    background-color: #020F14;
+
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+#wrapper {
+    width: 100%;
+    height: 90%;
+    background-color: #020F14;
+    margin: 0%;
+    margin-top: 0%;
+    overflow: hidden;
+}
+
+#timerScreen {
+    position: fixed;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 5;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+#homeTimer {
+    position: relative;
+    color: #EFD32C;
+    font-size: 500px;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    margin: 0px;
+    top: 50%;
+    z-index: 6;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+
+}
+
+#gameover {
+    display: none;
+    position: relative;
+    margin: auto;
+    margin-top: 5%;
+    width: 30%;
+    height: 70%;
+    background-color: #020F14;
+    border-width: 3px;
+    border-color: #EFD32C;
+    border-radius: 20px;
+    border-style: solid;
+    z-index: 7;
+    text-align: center;
+}
+
+#gamesettingswrapper {
+    display: block;
+    position: relative;
+    margin: auto;
+    margin-top: 5%;
+    width: 30%;
+    height: 70%;
+    background-color: #020F14;
+    border-width: 3px;
+    border-color: #EFD32C;
+    border-radius: 20px;
+    border-style: solid;
+    z-index: 7;
+    text-align: center;
+}
+
+#gamesettings {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    margin-top: 20px;
+}
+
+#settings {
+    position: relative;
+    color: #EFD32C;
+    font-size: 25px;
+    margin-top: 20px;
+
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+#statTitle {
+    position: relative;
+    color: #EFD32C;
+    font-size: 40px;
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.stats {
+    position: relative;
+    color: #EFD32C;
+    font-size: 25px;
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+#settingsButtons {
+    text-align: center;
+
+    margin-top: 20px;
+
+}
+
+#timeSettingsButtons {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#timeWrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    margin-top: 310px;
+}
+
+
+#timeInput {
+    margin-bottom: 10px;
+}
+
+#title {
+    position: relative;
+    color: #EFD32C;
+    font-size: 100px;
+    margin-top: 10%;
+
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+#start {
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    color: #EFD32C;
+    font-size: 50px;
+}
+
+#score {
+    display: inline;
+    font-family: 'Rajdhani', sans-serif;
+    color: #EFD32C;
+
+}
+
+#misses {
+    display: inline;
+    font-family: 'Rajdhani', sans-serif;
+    color: #EFD32C;
+
+}
+
+#timer {
+    display: inline;
+    font-family: 'Rajdhani', sans-serif;
+    color: #EFD32C;
+
+}
+
+#container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0%;
+    background-color: #020F14;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+#target {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    border-style: dashed;
+    border-color: aqua;
+    background-color: rgba(0, 0, 0, 0);
+    left: 40%;
+    top: 40%;
+}
+
+#tempTarget {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    border-style: dashed;
+    border-color: aqua;
+    background-color: rgba(0, 0, 0, 0);
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75px
+}
+
+#maindiv {
+    text-align: center;
+}
+
+/* CSS */
+.button-30 {
+    margin: 10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #020F14;
+    border-radius: 4px;
+    border-width: 2px;
+    border-color: #EFD32C;
+    -webkit-box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #efd32c 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #efd32c 0 -3px 0 inset;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #EFD32C;
+    cursor: pointer;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: -webkit-box-shadow .15s, -webkit-transform .15s;
+    transition: -webkit-box-shadow .15s, -webkit-transform .15s;
+    -o-transition: box-shadow .15s, transform .15s;
+    transition: box-shadow .15s, transform .15s;
+    transition: box-shadow .15s, transform .15s, -webkit-box-shadow .15s, -webkit-transform .15s;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+.button-30:focus {
+    -webkit-box-shadow: #efd32c 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #efd32c 0 -3px 0 inset;
+    box-shadow: #efd32c 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #efd32c 0 -3px 0 inset;
+    outline: #EFD32C;
+
+}
+
+.button-30:hover {
+    -webkit-box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #efd32c 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #efd32c 0 -3px 0 inset;
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+    background-color: #efd22c2b;
+}
+
+.button-30:active {
+    -webkit-box-shadow: #efd32c 0 3px 7px inset;
+    box-shadow: #efd32c 0 3px 7px inset;
+    -webkit-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    transform: translateY(2px);
+}
